@@ -21,6 +21,7 @@ const Modal: React.FC<IModalProps> = ({ children, isOpen, setIsOpen }) => {
   const [modalStatus, setModalStatus] = useState(isOpen);
 
   useEffect(() => {
+    console.log('effect');
     setModalStatus(isOpen);
   }, [isOpen]);
 
